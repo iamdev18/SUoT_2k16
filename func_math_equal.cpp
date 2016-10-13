@@ -17,7 +17,7 @@ public:
 };
 void Math::Init() 
 {
-	cout<<"¬ведите переменную в пределах 1 .. 10 \n"<<endl;
+	cout<<"Input values ranging 1 .. 10 \n"<<endl;
 	cin>>x;
 	
 	y1=0.0;
@@ -52,7 +52,7 @@ void Math::Init()
 }
 void main() 
 {
-	setlocale(LC_ALL, "Russian");
+	setlocale(LC_ALL, 0);
 	Math m;
 	m.Init();
 	system("pause ");
