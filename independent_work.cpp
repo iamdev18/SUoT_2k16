@@ -62,7 +62,7 @@ void Arr::Init()
 			
 		}
 	}
-	cout<<"Óïîðÿäî÷åííûé ìàññèâ: \n";
+	cout<<"Упорядкований масив: \n";
 	for(int i=0;i<N;i++)
 	{
 		
@@ -72,7 +72,7 @@ void Arr::Init()
 	}
 	
 	
-	cout << "Сума елементів матриці: \n" << sum << endl;
+	cout << "Сума додатніх елементів матриці: \n" << sum << endl;
 	cout<<"Добуток елементів матриці : \n"<< mul <<endl;
 	delete []arr;
   
@@ -80,7 +80,7 @@ void Arr::Init()
 
 void main()
 {
-	setlocale(LC_ALL, "Russian");
+	setlocale(LC_ALL, "Ukrainian");
 	Arr func;
 	func.Init();
 	system("pause");
