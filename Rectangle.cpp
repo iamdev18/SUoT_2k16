@@ -13,7 +13,7 @@ public:
 void Rectangle::Show()
 {
 	
-	cout << "¬ведите размерность матрицы: \n";
+	cout << "Input size 2 Dimensions Array: \n";
 	cin >> a >> k;
 	cout << endl;
 	cout << "Output stream: \n" << endl;
@@ -27,7 +27,7 @@ void Rectangle::Show()
 }
 void main()
 {
-	setlocale(LC_ALL, "Russian" );
+	setlocale(LC_ALL, 0 );
 	Rectangle rec;
 	rec.Show();
 	cout << endl;
