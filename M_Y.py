@@ -14,13 +14,13 @@ if n > R:
     sys.exit()
 else:
     Y = np.zeros([m, n])
-    A = []
+    A = np.zeros([n*n])
 
-s=1;
-strt=1;
-fin=100;
-k=0;
-summ=0;
+s=1
+strt=1
+fin=100
+k=0
+summ=0
 for i in range(m):
     for j in range(n):
         Y[i,j]=rand.randint(strt,fin)
@@ -31,7 +31,7 @@ for i in range(m):
 print("\n")
 rang_s = 35
 rang_fin = 83
-print("Summm after additional: \n ")
+print("Result after multiplication main diagonal: \n ")
 for i in range(m):
     if Y[i,i] > rang_s and Y[i,i] < rang_fin:
         s = s * Y[i,i]
@@ -43,4 +43,4 @@ for i in range(m):
         summ = summ + Y[i,j]
         if s < summ :
             A.append(Y)
-        print(A," ")
+            print(A," ")
