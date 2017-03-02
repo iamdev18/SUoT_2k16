@@ -1,58 +1,49 @@
 #include <iostream>
-#include <math.h>
+#include <Windows.h>
+
 using namespace std;
-class A
+
+class Arrays
 {
 public:
+
 	void Init();
-	int a, b;
-	int c;
-	int res;
-	void Show();
-	
+
 };
-void A::Init() 
-{
-	cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ð¿ÐµÑ€ÑˆÐµ Ñ‚Ñ€ÑŒÐ¾Ñ…Ð·Ð½Ð°Ñ‡Ð½Ðµ Ñ‡Ð¸ÑÐ»Ð¾:" << endl;
-	cin >> a;
-	cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ð´Ñ€ÑƒÐ³Ðµ Ñ‚Ñ€ÑŒÐ¾Ñ…Ð·Ð½Ð°Ñ‡Ð½Ðµ Ñ‡Ð¸ÑÐ»Ð¾" << endl;
-	cin >> b;
-	c = a + b;
-	cout << "Ð¡ÑƒÐ¼Ð° Ð´Ð²Ð¾Ñ… Ñ‚Ñ€ÑŒÐ¾Ñ…Ð·Ð½Ð°Ñ‡Ð½Ð¸Ñ… Ñ‡Ð¸ÑÐµÐ» Ð´Ð¾Ñ€Ñ–Ð²Ð½ÑŽÑ” \n" << c << endl;
-	if (c!= 0)
+void Arrays::Init(/* arguments */) {
+	/* code */
+	int n;
+	cout<<"Ââåäèòå çíà÷åíèÿ êîëè÷åñòâà ýêñïåðèìåíòîâ:"<<endl;
+	cin>>n;
+	int max;
+	int *arrY=new int[n];
+	int *arrX=new int[n];
+	for(int i=0;i<n;i++)
 	{
-		res += c % 10;
-		c /=10;
-		
-		/*for(int i=0;i<5;i++)
+		cout<<"Ââåäèòå çíà÷åíèÿ ìàññèâà Y ["<<i<<"]: "<<endl;
+		cin>>arrY[i];
+
+	}
+	for(int i=0;i<n;i++)
+	{
+		cout<<"Ââåäèòå çíà÷åíèÿ ìàññèâà X ["<<i<<"]: "<<endl;
+		cin>>arrX[i];
+		max=arrY[0];
+		if(arrY[i]>max)
 		{
-			cout<<"Result: \n"<<c[i]<<endl;
+			max=i;
+		
 		}
-				*/
 	}
-	else
-	{
-		cout << "Ð”Ð°Ð½Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð½Ðµ Ð½Ð°Ñ‚ÑƒÑ€Ð°Ð»ÑŒÐ½Ðµ" << endl;
-	}
-}
-void A::Show() 
-{
-	
-	if (res%2) {
-		cout << "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ Ð¿Ð°Ñ€Ð½Ñ‹Ð¹ Ð¸ Ñ€Ð°Ð²ÐµÐ½\n" << c << endl;
 
-	}
-	else{
-		cout << "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ Ð½ÐµÐ¿Ð°Ñ€Ð½Ñ‹Ð¹" << endl;
-	}
+		
+		cout<<"×èñëî â ìàññèâå X: \n "<<arrX[max]<<endl;
 }
-void main() 
+void main()
 {
-	setlocale(LC_ALL,"Russian" );
-	A task;
-	task.Init();
-	task.Show();
+	setlocale(LC_ALL,"Russian");
+	Arrays fl;
+	fl.Init();
 	system("pause");
-
 
 }
