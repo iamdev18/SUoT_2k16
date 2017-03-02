@@ -13,20 +13,20 @@ public:
 void Arrays::Init(/* arguments */) {
 	/* code */
 	int n;
-	cout<<"Ââåäèòå çíà÷åíèÿ êîëè÷åñòâà ýêñïåðèìåíòîâ:"<<endl;
+	cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð° ÑÐºÑÐ¿ÐµÑ€Ð¸Ð¼ÐµÐ½Ñ‚Ð¾Ð²:"<<endl;;
 	cin>>n;
 	int max;
 	int *arrY=new int[n];
 	int *arrX=new int[n];
 	for(int i=0;i<n;i++)
 	{
-		cout<<"Ââåäèòå çíà÷åíèÿ ìàññèâà Y ["<<i<<"]: "<<endl;
+		ccout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð¼Ð°ÑÑÐ¸Ð²Ð° Y ["<<i<<"]: "<<endl;
 		cin>>arrY[i];
 
 	}
 	for(int i=0;i<n;i++)
 	{
-		cout<<"Ââåäèòå çíà÷åíèÿ ìàññèâà X ["<<i<<"]: "<<endl;
+		cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð¼Ð°ÑÑÐ¸Ð²Ð° X ["<<i<<"]: "<<endl;
 		cin>>arrX[i];
 		max=arrY[0];
 		if(arrY[i]>max)
@@ -37,7 +37,7 @@ void Arrays::Init(/* arguments */) {
 	}
 
 		
-		cout<<"×èñëî â ìàññèâå X: \n "<<arrX[max]<<endl;
+		cout<<"Ð§Ð¸ÑÐ»Ð¾ Ð² Ð¼Ð°ÑÑÐ¸Ð²Ðµ X: \n "<<arrX[max]<<endl;
 }
 void main()
 {
