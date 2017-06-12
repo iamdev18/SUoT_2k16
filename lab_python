@@ -1,0 +1,27 @@
+import math
+hours = int(input("Введіть кількість годин: \n"))
+rate = float(input("Введіть плату за годину: \n"))
+pay = hours * rate
+print("Загальна вартість: \n ", pay)
+
+diametr=float(input ("Enter diameter : \n"))
+height=float(input("enter height: \n"))
+square=float(input("Square which paint: \n "))
+radius=diametr/2
+all_square=2*math.pi*radius*(radius*height)
+count=all_square/square
+print(all_square,"\n",count)
+
+
+p=float(input("Bank Percent: \n"))
+s=float(input("Summ credit: \n "))
+n=float(input("Num of years : \n"))
+m = (s * p * ((1 + p) ** n)) / (12*((1 + p) ** n) - 1)
+print("Salary : \n",m)
+
+a=float(input("input a:\n"))
+b=float(input("input b:\n"))
+c=float(input("input c:\n"))
+square=(1/2)*a*b
+perimeter=a+b+c
+print(square,"\n",perimeter)
